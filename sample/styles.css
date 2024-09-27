@@ -1,0 +1,239 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+header {
+    background-color: #f1e4d7;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li {
+    margin-left: 25px;
+}
+
+nav .menu li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+.cart-icon img {
+    margin-left: 25px;
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Main Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1300px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.order-list {
+    position: sticky; /* Make it sticky */
+    width: 48%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    
+
+}
+
+.details-form {
+    width: 48%;
+    background-color: whitesmoke;
+    padding: 20px;
+    position: sticky;
+    top: 20px; /* Adjust the distance from the top as needed */
+    right: 0;
+    height: 25%;
+    border-radius: 10px;
+}
+
+
+/* Orders Section */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.order-item p {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.order-item .price, 
+.order-item .total {
+    font-weight: bold;
+}
+
+.order-item .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.order-item .quantity button {
+    background-color: #eee;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.order-item .quantity input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Delivery Form */
+.details-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.details-form form input, 
+.details-form form select, 
+.details-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.details-form .form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-form .form-group input {
+    width: 48%;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Confirm Section */
+.confirm {
+    text-align: right;
+}
+
+.confirm p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.confirm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.confirm button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
